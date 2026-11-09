@@ -11,18 +11,20 @@ jeder Stufe (schwebender Lichteffekt).
 - Drehung: 360° über die gesamte Treppe (24° pro Stufe)
 - Handlauflänge: ca. 6837 mm
 
+## 3D direkt auf GitHub ansehen
+- `out/treppe_preview.stl` anklicken → GitHub zeigt das Modell interaktiv im 3D-Viewer
+  (Low-Poly-Vorschau: 15 Keilstufen + Mittelsäule)
+
 ## Inhalt
 - `treppe.py` – parametrischer Generator (alle Maße als Parameter oben im File)
 - `out/grundriss.svg`, `out/lauflinie.svg` – Grundriss und Abwicklung der Lauflinie
 - `out/teileliste.csv` – Stückliste für den Prototypenbau
+- `out/treppe_preview.stl` – 3D-Vorschau für den GitHub-Viewer
 
-## Alles Weitere erzeugen
-Die Binär-Artefakte (Renderings als PNG, `treppe.stl` / `treppe.glb`) werden lokal
-generiert:
-
+## Vollmodell + Renderings lokal erzeugen
     pip install numpy matplotlib trimesh shapely mapbox-earcut scipy
     python3 treppe.py
 
-Dann liegen in `out/` auch: ansicht_perspektive.png, ansicht_front.png,
-ansicht_oben.png, detail_stufen.png, ansicht_led_unten.png, detail_led.png,
-grundriss.png, lauflinie.png, treppe.stl, treppe.glb.
+Dann liegen in `out/` auch: treppe.stl / treppe.glb (Vollmodell, 14.200 Faces) und
+ansicht_perspektive.png, ansicht_front.png, ansicht_oben.png, detail_stufen.png,
+ansicht_led_unten.png, detail_led.png, grundriss.png, lauflinie.png.
